@@ -13,7 +13,7 @@ it('matches snapshot', function() {
 	expect(asFragment()).toMatchSnapshot();
 });
 
-it('can add a new box', function() {
+it('can add a new box and delete it', function() {
 	const { getByLabelText, queryByText } = render(<BoxList />);
 
 	// no items yet
@@ -32,4 +32,12 @@ it('can add a new box', function() {
 
 	// item exists!
 	expect(document.querySelector('div.Box')).toBeInTheDocument();
+
+	const deleteBtn = queryByText('X');
+
+	// click delete button
+	fireEvent.click(deleteBtn);
+
+	// box is deleted
+	expect(document.querySelector('div.Box')).not.toBeInTheDocument();
 });

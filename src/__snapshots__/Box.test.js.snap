@@ -5,5 +5,11 @@ exports[`matches snapshot 1`] = `
   <div
     class="Box"
   />
+  <button
+    class="Box-remove"
+  >
+    X
+  </button>
+  <br />
 </DocumentFragment>
 `;
