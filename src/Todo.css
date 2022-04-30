@@ -1,0 +1,11 @@
+.Todo {
+	display: inline-block;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.Todo-remove {
+	display: inline-block;
+	margin-left: 5px;
+	position: relative;
+}
