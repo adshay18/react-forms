@@ -6,7 +6,7 @@ const Todo = ({ removeTodo, idx, text }) => {
 		<React.Fragment>
 			<div className="Todo">{text}</div>
 			<button className="Todo-remove" onClick={() => removeTodo(idx)}>
-				X
+				Done
 			</button>
 			<br />
 		</React.Fragment>
