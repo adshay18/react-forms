@@ -1,4 +1,11 @@
 .Box {
+	display: inline-block;
 	margin: 0 auto;
 	margin-top: 10px;
+}
+
+.Box-remove {
+	display: inline-block;
+	margin-left: 5px;
+	position: relative;
 }
