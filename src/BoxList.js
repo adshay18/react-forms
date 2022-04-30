@@ -14,7 +14,7 @@ const BoxList = () => {
 	return (
 		<div className="BoxList">
 			<NewBoxForm addBox={addBox} />
-			<h2>Boxes</h2>
+			<h2>Boxes:</h2>
 			{boxes.map((box) => (
 				<Box
 					key={box.id}
